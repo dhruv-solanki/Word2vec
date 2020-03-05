@@ -26,7 +26,7 @@ Alibaba [6] took a similar path for product recommendations but added a few nove
 
 Lastly, I would like to say that in case of text no one really cares who generated it. In case of user’s click sessions you always have “an agent” that generated that particular sequence. You can use that to create dual-embedding space where both users and items are represented by fixed-sized vectors living in the same space. Now you can build personalized recommendations!
 
-Special Thanks ->  Dariusz Kajtoch [https://www.quora.com/profile/Dariusz-Kajtoch]
+Special Thanks ->  [Dariusz Kajtoch](https://www.quora.com/profile/Dariusz-Kajtoch)
 
 ### Tech Stack
 1. Node JS
