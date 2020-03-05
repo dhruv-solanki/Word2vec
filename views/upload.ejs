@@ -1,0 +1,10 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5 mb-5 text-center" style="height: 52vh;">
+    <form action="/uwe/fileupload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="filetoupload">
+        <button type="submit" class="btn btn-warning">Upload</button>
+    </form>
+</div>
+
+<%- include('partials/footer') %>

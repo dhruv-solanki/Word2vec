@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+    background-color: orange;
+}
+
+#navbar a {
+    color: black;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    color:whitesmoke;
+}
+
+#about .card {
+    padding: 5%;
+    margin-top: 3%;
+    background-color: whitesmoke;
+}

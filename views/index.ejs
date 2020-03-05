@@ -1,0 +1,48 @@
+<%- include('partials/header') %>
+
+<div id="index" class="mt-3 mb-3">
+    <div class="container">
+        <h5 class="text-center mb-3">Unsupervised Word Embedding</h5>
+
+        <form action="/uwe" method="POST">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-9">
+                        <input type="text" class="form-control" name="keyword" placeholder="Search Keyword" value="<%= keyword %>">
+                    </div>
+                    <div class="col-3">
+                        <button type="submit" class="form-control btn btn-success">Search</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div id="result">
+            <% if(typeof(result) != 'string')  { %>
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <th>Word</th>
+                        <th>Corelation</th>
+                    </tr>
+                    <% for(key in result) { %>
+                        <tr>
+                            <td> <%= result[key][0] %> </td>
+                            <td> <%= result[key][1] %> </td>
+                        </tr>
+                    <% } %>
+                </table>
+            <% } else { %>
+                <div class="text-center mt-5" style="height: 45vh;">
+                    <p>
+                        Result will be display here!
+                        <h2>
+                            <%= result.substring(499) %>
+                        </h2>
+                    </p>
+                </div>
+            <% } %>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer') %>
